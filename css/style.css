@@ -1,0 +1,16 @@
+body{
+	background-image:url('../img/6-PIECE-WOODLESS-font-b-CHARCOAL-b-font-font-b-PENCIL-b-font-SOFT-MEDIUM-font.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+ #signUp{
+ 	width:20%;
+ 	height:30%;
+ 	margin:0 auto;
+ }
+#signUp .signUp-input{
+	width:100%;
+}
+.f-m{
+	color:white;
+}
