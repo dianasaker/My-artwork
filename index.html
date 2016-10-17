@@ -4,35 +4,22 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		  <sign-up></sign-up>
-		  <div id="signUp" ng-controller="signUp">
-			<input class="signUp-input" placeholder="firstname" ng-model="fn"/>
-			<hr>
-			<input class="signUp-input" placeholder="lastname" ng-model="ln" />
-			<hr>
-			<input class="signUp-input"  type="email" placeholder="e-mail" ng-model="email"/>
-			<hr>
-			<input class="signUp-input" type="password" placeholder="password" ng-model="password"/>
-			<hr>
-			<input class="signUp-input" type="password" placeholder="retype password" ng-model="repassword" />
-			<hr>
-			<input name="f" type="radio" placeholder="gender" ng-model="gender" value="female"/>
-			<label for="f" class="f-m">female</label>
-			<hr>
-			<input name="m" type="radio" placeholder="gender" ng-model="gender" value="male"/>
-			<label for="m" class="f-m">male</label>
-			<hr>
-			<button ng-click="model()">send</button>
-		  </div>
-		
-		
-		
-		
+		 <nav>
+		 	<ul>
+		 		<li><a href="#">home</a></li>
+		 		<li><a href="#details">details</a></li>
+		 		<li><a href="#artists">artists</a></li>
+		 	</ul>
+		 </nav>
+		 <ng-view></ng-view>
 		
 		<script src="js/angular.min.js"></script>
-		<script src="APP/config.js"></script>
-		<script src="APP/controllers/forms.js"></script>
-		<script src="APP/directives/directive.js"></script>
+		<script src="node_modules/angular-route/angular-route.js"></script>
+		<script src="app/config.js"></script>
+		<script src="app/route.js"></script>
+		<script src="app/controllers/forms.js"></script>
+		<script src="app/controllers/details.js"></script>
+		<script src="app/controllers/artists.js"></script>
 		
 	</body>
 </html>
