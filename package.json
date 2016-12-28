@@ -1,21 +1,17 @@
 {
-  "name": "myartwork",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/dianasaker/My-artwork.git"
-  },
-  "author": "",
-  "license": "BSD",
-  "bugs": {
-    "url": "https://github.com/dianasaker/My-artwork/issues"
-  },
+  "name": "upload_image",
+  "version": "0.0.1",
   "dependencies": {
-    "angular-route": "~1.5.8"
-  }
+    "angular": "^1.5.8",
+    "express": "4.13.3",
+    "multer": "1.1.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "Server.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

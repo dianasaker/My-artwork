@@ -1,7 +1,14 @@
-<div ng-controller="artists">
-	<nav ng-repeat="u in users">
-		<li>{{u.fullname}}blabla
-			{{u.img}}
+<nav ng-controller="artists" id="artists">
+	<div>
+		<input type="text" placeholder="Search.." id="search" ng-model="searchText">
+	</div>
+	<ul>
+		<li ng-repeat="a in artists | filter:searchText" class="artist-details" ng-click="get(a.fullname)">
+			<img ng-src="uploads/{{a.myFile}}" />
+			<div>
+				{{a.fullname}}
+			</div>
 		</li>
-	</nav>
-</div>
+	</ul>
+</nav>
+

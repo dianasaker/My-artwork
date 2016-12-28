@@ -2,14 +2,23 @@
 	angular.module("app").config(route);
 	function route($routeProvider){
 		$routeProvider
-		.when("/details",{
-			templateUrl:"app/views/details.html",
-			controller:"details"
+		.when("/signUp",{
+			templateUrl:"app/views/signUp.html"
 		})
 		.when("/artists",{
-			templateUrl:"app/views/artists.html",
-			controller:"artists"
+			templateUrl:"app/views/artists.html"
 		})
-		.otherwise("/");
+		.when("/clientView",{
+			templateUrl:"app/views/clientView.html",
+			controller:"clientView"
+		})
+		.when("/login",{
+			templateUrl:"app/views/login.html"
+		})
+		.when("/home",{
+			templateUrl:"app/views/home.html",
+			controller:"home"
+		})
+		.otherwise("/login");
 	}
 })();

@@ -1,0 +1,43 @@
+<div ng-controller="signUp" id="d">
+	<form id="detail">
+		<div class="form-group">
+			<input ng-model="fullname" class="form-control" placeholder="Enter First">
+		</div>
+		<hr />
+		<div class="form-group">
+			<input ng-model="Lname" class="form-control" placeholder="Enter Last">
+		</div>
+		<hr />
+		<div class="form-group">
+			<input ng-model="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+			<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		</div>
+		<hr />
+		<div class="form-group">
+			<input ng-model="password" class="form-control" placeholder="Password" type="password">
+		</div>
+		<hr />
+		<div class="form-group">
+			<select class="form-control" ng-model="select" placeholder="my">
+				<option selected>my speciality:</option>
+				<option>portrait</option>
+				<option>natural views</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<textarea class="form-control" id="notes" rows="3" ng-model="notes" placeholder="notes"></textarea>
+		</div>
+		<div>
+			<input class="form-group" id="myFile" ng-model="img" type="file" file-Upload = "myFile">
+		</div>
+		<div class="form-check" id="checkbox">
+			<label class="form-check-label">I agree to share my details
+				<input type="checkbox" class="form-check-input" ng-model="checkboxModel">
+			</label>
+			<br/>
+		</div>
+		<button ng-click="save()" class="btn btn-primary">
+			<span>submitt</span>
+		</button>
+	</form>
+</div>

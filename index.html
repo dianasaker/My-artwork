@@ -2,24 +2,38 @@
 	<head>
 		<title>My Artwork</title>
 		<link rel="stylesheet" href="css/style.css" />
+
 	</head>
-	<body>
-		 <nav>
-		 	<ul>
-		 		<li><a href="#">home</a></li>
-		 		<li><a href="#details">details</a></li>
-		 		<li><a href="#artists">artists</a></li>
-		 	</ul>
-		 </nav>
-		 <ng-view></ng-view>
-		
-		<script src="js/angular.min.js"></script>
+	<body ng-controller="mainCont">
+			<nav ng-show="isShow" class="navbar navbar-inverse" id="nav">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="#home">home</a>
+					</li>
+					<li>
+						<a href="#artists">Users</a>
+					</li>
+				</ul>
+			</nav>
+		<ng-view id="ng-view"></ng-view>
+
+		<script src="node_modules/angular/angular.js"></script>
 		<script src="node_modules/angular-route/angular-route.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="app/config.js"></script>
 		<script src="app/route.js"></script>
-		<script src="app/controllers/forms.js"></script>
-		<script src="app/controllers/details.js"></script>
+		<script src="app/directives/directiveFile.js"></script>
+		<script src="app/services/serviceFile.js"></script>
+		<script src="app/controllers/clientView.js"></script>
+		<script src="app/controllers/signUp.js"></script>
 		<script src="app/controllers/artists.js"></script>
-		
+		<script src="app/controllers/manageFile.js"></script>
+		<script src="app/controllers/login.js"></script>
+		<script src="app/controllers/mainCont.js"></script>
+		<script src="app/controllers/home.js"></script>
+
 	</body>
 </html>

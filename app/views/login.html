@@ -1,0 +1,24 @@
+<div ng-controller="login" id="login">
+	<div>
+		<h1 class="text-center">Login</h1>
+	</div>
+	<div>
+		<form>
+			<div>
+				<input type="email" placeholder="E-mail" ng-model="email">
+			</div>
+			<div>
+				<input type="password" placeholder="Password" ng-model="password">
+			</div>
+			<div>
+				<button ng-click="signIn()">
+					Sign In
+				</button>
+				<button ng-click="signUp()">
+					signUp
+				</button><span><a href="#">Need help?</a></span>
+			</div>
+		</form>
+	</div>
+
+</div>

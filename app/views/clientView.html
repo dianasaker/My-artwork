@@ -1,0 +1,43 @@
+<div id="client-v">
+	<div ng-if="!myProfile">
+		<img ng-src="uploads/{{client.myFile}}" />
+		<div>Name:</div>      {{client.fullname}}
+		<br/>
+		<div>password:</div>      {{client.password}}
+		<br/>
+		<div>Last Name:</div>    {{client.Lname}}
+		<br/>
+		<div>E-mail:</div>   {{client.email}}
+		<br/>
+		<div>speciality:</div>      {{client.select}}
+		<br/>
+		<div>notes: </div>  {{client.notes}}
+		</div>
+	<div ng-if="myProfile">
+		<img ng-src="uploads/{{client.myFile}}" />
+		<div id="myFileDiv">
+		  <input id="myFile" ng-model="imgInput" type="file" file-Upload = "myFile">
+		</div>
+		<div>Name:</div>
+		<input ng-model="NameInput" placeholder="{{client.fullname}}"/>
+		<br/>
+		<div>password:</div>
+		<input ng-model="PasswordInput" placeholder="{{client.password}}"/>
+		<br/>
+		<div>Last Name:	</div>
+		<input ng-model="LnameInput" placeholder="{{client.Lname}}"/>
+		<br/>
+		<div>E-mail:</div>
+		<input ng-model="emailInput" placeholder="{{client.email}}"/>
+		<br/>
+		<div>speciality:</div>
+		<input ng-model="selectInput" placeholder="{{client.select}}"/>
+		<br/>
+		<div>notes:</div>
+		<input ng-model="notesInput" placeholder="{{client.notes}}"/>
+		  <button class="glyphicon glyphicon-pencil" ng-click="saveInput()" class="w3-btn w3-hover-white">
+			save
+		  </button>
+	</div>
+</div>
+

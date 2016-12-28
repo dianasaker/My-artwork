@@ -1,16 +1,207 @@
-body{
-	background-image:url('../img/6-PIECE-WOODLESS-font-b-CHARCOAL-b-font-font-b-PENCIL-b-font-SOFT-MEDIUM-font.jpg');
+html body{
+	width:100%;
+	height:100%;
+}
+body #nav {
+	margin: 0;
+}
+body #ng-view {
+	width: 100%;
+	height: 100%;
+}
+#login {
+	background-image: url('../img/charcoal-drawing-contemporary-dance-heather-hansen-6.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
- #signUp{
- 	width:20%;
- 	height:30%;
- 	margin:0 auto;
- }
-#signUp .signUp-input{
+#signUp {
+	width: 20%;
+	height: 30%;
+	margin: 0 auto;
+}
+#signUp .signUp-input {
+	width: 100%;
+}
+.f-m {
+	color: white;
+}
+#Menu li {
+	list-style-type: none;
+}
+#Menu li a {
+	text-decoration: none;
+	color: rgba(0, 206, 255, 0.47);
+}
+.artist-details {
+	cursor: pointer;
+}
+.artist-details a {
+	color: black;
+}
+#d {
+	background-image: url("../img/Charcoal-beauty.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#detail {
+	width: 50%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 37 0;
+}
+#detail label {
+	width: 100%;
+	text-align: center;
+	color: #13a1b3;
+	font-weight: bolder;
+}
+#detail input {
+	text-align: center;
+	background-color: white;
+	width: 84%;
+	margin: 0 auto;
+	color: #535656;
+}
+#detail small {
+	color: #B598EA;
+	margin-left: 64px;
+	font-weight: bold;
+}
+#detail textarea {
+	width: 178px;
+	height: 6%;
+	margin: 0 auto;
+	background-color: white;
+	color:#535656;
+}
+#detail select {
+	background-color:white;
+	width: 84%;
+	margin: 0 auto;
+	color:#535656
+}
+#detail #myFile {
+	width: 92px;
+	color: initial;
+}
+#detail #checkbox {
+	float: left;
+}
+#detail #checkbox input {
+	width: auto;
+}
+#detail #checkbox label {
+	color: #535656;
+	font-weight: normal;
+	padding: 10px;
+}
+#detail button {
+	width: 150px;
+	background-color: #63676b;
+	border: 1px solid #63676b;
+	color: #000000;
+	float: right;
+	margin-right: 48px;
+}
+#detail button:hover {
+	background-color: #282e33;
+	color: #B598EA;
+}
+#artists {
+	background-image: url("../img/charcoal-drawing-1558887_960_720.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+#artists li div {
+	text-align: center;
+	font-size: 18px;
+}
+#artists li img {
+	width: 116px;
+	height: 110px;
+	border-radius: 20px;
+}
+#artists li {
+	color:#FFFFFF;
+	list-style-type: none;
+	width: auto;
+	height: auto;
+	float: left;
+	margin: 20px;
+	border-radius: 48px;
+}
+#artists li:hover {
+	box-shadow: 0 16px 82px 0 black, 0 -10px 66px 0 black;
+	background-color: white;
+	color: #535656;
+}
+#client-v img {
+	width: 264px;
+	height: 180px;
+	margin: 0 auto;
+	display: block;
+}
+#client-v {
+	padding: 42px 0;
+	color: black;
+	font-size: 20px;
+	background: white;
+	direction:ltr;
+	height:auto;
+	width:50%;
+	margin:0 auto;
+}
+#client-v div {
+	font-weight: bold;
+	display: inline;
+}
+#client-v #myFile{
+	width:105px;
+	margin:0 auto;
+	font-size:16px;
+	border:2px solid #5e778c;
+}
+#client-v #myFileDiv{
 	width:100%;
 }
-.f-m{
+#client-v input{
+	border:none;
+	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width:100%;
+}
+#client-v button{
+	width:50px;
+	margin:0 auto;
+}
+#search {
+	width: 130px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
+#search:focus {
+	width: 30%;
+}
+.modal-footer {
+	border-top: 0px;
+}
+#home{
+	background-color:black;
+	height:100%;
+	width:100%;
+}
+#home #head{
+	width:50%;
+	border:1px dashed white;
 	color:white;
+}
+#home div a{
+	display:inline;
+	padding:10px;
+	width:auto;
 }
